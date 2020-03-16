@@ -315,7 +315,7 @@ footer{
     color: #FFFFFF;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 768px) {
     .parallax_img{
         display: block;
     }
@@ -336,7 +336,7 @@ footer{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 50px 350px 50px 350px 50px 350px;
         grid-row-gap: 0;
-        max-width: 1100px;
+        max-width: 1000px;
         margin: auto;
     }
 
@@ -412,7 +412,7 @@ footer{
 
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1025px) {
     .after_container{
         background-color: #FBA169;
         border-radius: 10px;
