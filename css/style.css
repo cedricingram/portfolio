@@ -436,6 +436,14 @@ footer{
         max-width: 1400px;
     }
 
+    .el5{
+        grid-column: 2 / span 1;
+    }
+
+    .el6{
+        grid-column: 1 / span 1;
+    }
+
     .el8{
         border-bottom-left-radius: 10px;
     }
