@@ -6,16 +6,17 @@
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Cedric Embraces Spain</title>
-</head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160757615-2"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160757615-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'UA-160757615-2');
-</script>
+        gtag('config', 'UA-160757615-2');
+    </script>
+</head>
+
 
 <body>
     <a class="skip" href="#main">Jump to Content</a>
@@ -76,8 +77,8 @@
     </div>
 
     <form action="https://formspree.io/xyypwjzp" method="POST">
-        <fieldset>
-            <div class = "contact">
+        <div class="contact">
+            <fieldset>
                 <legend>Contact Form</legend>
                 <label for ="name">Name:</label>
                 <input type="text" id ="name" name="name" placeholder="Your First Name" required/>
@@ -90,9 +91,9 @@
 
                 <label for ="message">Message:</label>
                 <textarea id="message" name="message" placeholder="Type Your Message" required></textarea>
-                <input id="submit" type="submit" value="Submit" required>
-            </div>
-        </fieldset>
+                <input id="submit" type="submit" value="Submit"/>
+            </fieldset>
+        </div>
     </form>
 </main>
 <footer>
