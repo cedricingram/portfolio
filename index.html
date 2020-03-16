@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +8,11 @@
     <title>Cedric Embraces Spain</title>
 </head>
 <body>
-    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <a class="skip" href="#main">Jump to Content</a>
 <header>
     <nav>
         <ul class="nav_links">
-            <li><a href="index.html">Home</a></li>
+            <li id="clicked"><a href="#main">Home</a></li>
             <li><a href="before.html">Before</a></li>
             <li><a href="during.html">During</a></li>
             <li><a href="after.html">After</a></li>
@@ -20,20 +20,49 @@
     </nav>
 </header>
 <main id="main">
-    <h1>Cedric Embraces Spain</h1>
+    <div class="home_page">
+    <h1 class="home_page">Cedric Embraces Spain</h1>
+    </div>
     <p id="slogan">Learn more about my study abroad experience in Spain!</p>
     <div class="parallax_img"></div>
     <h2 id = "gallery">Gallery</h2>
     <div class="gallery">
-        <img id="image1" src="images/IMG_2252.jpg" alt="Salamanca Cathedral at night" />
-        <img id="image2" src="images/IMG_1521.jpg" alt="statue in front of the Reina Sofia National Museum of Art" />
-        <img id="image3" src="images/IMG_1243.JPG" alt="stop sign" />
-        <img id="image4" src="images/IMG_0886.JPG" alt="key locks locked to a well" />
-        <img id="image5" src="images/IMG_1597.jpg" alt="collection of poster stickers" />
-        <img id="image6" src="images/IMG_2206.jpg" alt="patio at night" />
-        <img id="image7" src="images/IMG_1759.JPG" alt="picture of Mary" />
-        <img id="image8" src="images/IMG_1766.jpg" alt="village and connecting bridge" />
-        <img id="image9" src="images/IMG_1211.jpg" alt="portraits of people on wall of building in village" />
+        <div class="image_container">
+            <img id="image1" src="images/IMG_2252.jpg" alt="Salamanca Cathedral at night" />
+            <div class="overlay">Salamanca Cathedral</div>
+        </div>
+        <div class="image_container">
+            <img id="image2" src="images/IMG_1521_1.jpg" alt="statue in front of the Reina Sofia National Museum of Art" />
+            <div class="overlay">From Reina Sofia National Museum of Art</div>
+        </div>
+        <div class="image_container">
+            <img id="image3" src="images/IMG_1243.JPG" alt="stop sign" />
+            <div class="overlay">Cool Stop Sign</div>
+        </div>
+        <div class="image_container">
+            <img id="image4" src="images/IMG_0886_1.JPG" alt="key locks locked to a well" />
+            <div class="overlay">Lovers Lock Well</div>
+        </div>
+        <div class="image_container">
+            <img id="image5" src="images/IMG_1597.jpg" alt="collection of poster stickers" />
+            <div class="overlay">Poster Stickers at Spain/Portugal Border</div>
+        </div>
+        <div class="image_container">
+            <img id="image6" src="images/IMG_2206.jpg" alt="patio at night" />
+            <div class="overlay">Dorm Patio in Spain</div>
+        </div>
+        <div class="image_container">
+            <img id="image7" src="images/IMG_1759_1.JPG" alt="picture of Mary" />
+            <div class="overlay">Picture of Mary</div>
+        </div>
+        <div class="image_container">
+            <img id="image8" src="images/IMG_1766.jpg" alt="village and connecting bridge" />
+            <div class="overlay">Picture of Village</div>
+        </div>
+        <div class="image_container" class="image_container9">
+            <img id="image9" src="images/IMG_1211.jpg" alt="portraits of people on wall of building in village" />
+            <div class="overlay">Portraits of the People of Mogarraz, Spain (Past and Present)</div>
+        </div>
     </div>
 
     <form action="" method="POST">
@@ -51,7 +80,7 @@
 
                 <label for ="message">Message:</label>
                 <textarea id="message" name="message" placeholder="Type Your Message"></textarea>
-                <input type="submit" value="Submit">
+                <input id="submit" type="submit" value="Submit">
             </div>
         </fieldset>
     </form>
